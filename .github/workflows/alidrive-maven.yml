@@ -32,4 +32,4 @@ jobs:
         native-image: true
     - name: Build with Maven
       # run: mvn package -Pnative -DskipTests --file ${{ github.workspace }}/alidrive/pom.xml
-      run: ls -l ${{ github.workspace }}
+      run: cd ${{ github.workspace }} && cd .. && ls -l
