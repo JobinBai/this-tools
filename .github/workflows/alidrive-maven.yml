@@ -31,6 +31,4 @@ jobs:
         # Install GraalVM Native Image
         native-image: true
     - name: Build with Maven
-      run: |
-        cd alidrive
-        mvn package -Pnative -DskipTests 
+      run: mvn package -Pnative -DskipTests --file alidrive/pom.xml
